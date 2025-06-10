@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>De Slimste Mens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>De Slimste Mens</h1>
+
+  <div id="game">
+    <div id="question-area">
+      <h2 id="question-title">Open Deur</h2>
+      <p id="question-text">Klik op "Nieuwe Vraag" om te beginnen.</p>
+    </div>
+
+    <button onclick="nextQuestion()">Nieuwe Vraag</button>
+
+    <div id="timer">
+      Tijd: <span id="time">60</span> seconden
+      <button onclick="startTimer()">Start Timer</button>
+    </div>
+
+    <div id="scoreboard">
+      <h3>Scores</h3>
+      <p>Speler 1: <span id="score1">0</span></p>
+      <p>Speler 2: <span id="score2">0</span></p>
+      <button onclick="addPoint(1)">+1 Speler 1</button>
+      <button onclick="addPoint(2)">+1 Speler 2</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
